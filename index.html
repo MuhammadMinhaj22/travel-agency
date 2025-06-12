@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- link tag -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- style tag -->
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+      </style>
+      <style>
+        .myDiv {
+          border: 5px outset red;
+          background-color: lightblue;
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+    
+<!--     anchor tag -->
+<a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">www.google.com</a>
+
+<!-- abbriviation tag -->
+<p>I am <abbr title="muhammad minhaj">MM</abbr></p>
+
+<!-- address tag -->
+ <address>go to:
+    <a href="https://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">google</a>
+
+ </address>
+
+<!-- h1 to h6 tag -->
+ <h1>MINHAJ</h1>
+ <h2>MINHAJ</h2>
+ <h3>MINHAJ</h3>
+ <h4>MINHAJ</h4><h5>MINHAJ</h5><h6>MINHAJ</h6>
+
+<!--  p and hr br tag -->
+ <hr>
+ <P>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Minima, maiores?</P>
+ <hr>
+
+<!--  bold tag -->
+  <b>Minhaj</b>
+
+  <!-- bdo tag -->
+  <p>Lorem ipsum dolor sit amet.</p>
+<p><bdo dir="rtl">Lorem ipsum dolor sit amet.</bdo></p>
+
+<!-- bdi tag -->
+<ul>
+    <li>User <bdi>hrefs</bdi>: 60 points</li>
+    <li>User <bdi>jdoe</bdi>: 80 points</li>
+    <li>User <bdi>إيان</bdi>: 90 points</li>
+  </ul>
+
+  <!-- blockquote tag -->
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading 
+    conservation organization, WWF works in 100 countries and is supported by 1.2 million members in
+     the United States and close to 5 million globally.
+    </blockquote>
+
+    <!-- cite tag -->
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+   <!--  code tag -->
+   <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+   <!-- del and ins  tag -->
+   <p>My favorite color is <del cite="blue color is old" datetime="2021:12:5:3:15:55">blue</del> <ins>red</ins>!</p>
+
+   <!-- dfn tag -->
+   <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+   <!-- em tag -->
+   <p>You <em>have</em> to hurry up!</p>
+
+   <!-- i tag -->
+   <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+
+   <!-- kdo tag -->
+   <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+
+   <!--  mark tag -->
+   <p>Do not forget to buy <mark>milk</mark> today.</p>
+
+   <!-- meter tag -->
+   <label for="disk_c"> Disk usage C:</label>
+   <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+   <label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+
+<!-- pre tag -->
+<pre>
+  Text in a pre element
+  is displayed in a fixed-width
+  font, and it preserves
+  both      spaces and
+  line breaks
+  </pre>
+
+  <!-- progress tag -->
+  <label for="file">Downloading progress:</label>
+  <progress id="file" value="32" max="100"> 32% </progress>
+
+  <!-- q tag -->
+  <p>WWF's goal is to:
+    <q>Build a future where people live in harmony with nature.</q>
+    We hope they succeed.</p>
+
+    <!-- rp,rt and ruby tag -->
+    <ruby>
+      漢<rp>(</rp><rt>ㄏㄢˋ</rt><rp>)</rp>
+    </ruby>
+
+    <!-- s tag -->
+    <p><s>Only 50 tickets left!</s></p>
+    <p>SOLD OUT!</p>
+
+    <!-- samp tag -->
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+<!-- small tag -->
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p>
+
+<!-- strong tag -->
+<strong>This text is important!</strong><br>
+
+<!-- sub tag -->
+<p>H <SUb>2</SUb>O</p>
+
+<!-- SUP TAG -->
+ <p>10 <sup>th</sup></p>
+
+ <!-- template tag  
+  is use in JS-->
+ <button onclick="showContent()">Show hidden content</button>
+
+ <template>
+   <h2>CAR</h2>
+   <img src="assets/car.webp" width="214" height="204">
+ </template>
+ 
+ <script>
+ function showContent() {
+   let temp = document.getElementsByTagName("template")[0];
+   let clon = temp.content.cloneNode(true);
+   document.body.appendChild(clon);
+ }
+ </script>
+
+<!-- time tag -->
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+<!-- u tag -->
+ <u>Minhaj</u>
+
+ <!-- var tag -->
+ <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>
+  b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+  <!-- wbr tag -->
+  <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
+
+<!-- form,label,input,textarea,select,option  tag -->
+<form action="post">
+  <div>
+  <label for="username">Enter your username</label>
+  <input type="text" id="username" name="username" placeholder="Enter your username">
+</div>
+<div>
+  <input type="radio" name="gender" id="male" value="male" >
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="female" value="female">
+  <label for="female">Female</label>
+</div>
+<div>
+  <label for="comment">Enter your comment here...</label><br>
+  <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+</div>
+<div>
+  <select name="fruits" id="">
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="cherry">Cherry</option>
+  </select>
+</div>
+</form>
+
+<!-- button tag -->
+<button type="button">Click Me!</button><br>
+
+<!-- optgroup tag -->
+<label for="cars">Choose a car:</label>
+<select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+
+<!-- fieldset ,legend tag -->
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+  <!-- datalist tag -->
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+
+  <!-- output tag -->
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="25">
+    =<output name="x" for="a b"></output>
+  </form><br>
+
+  <!-- iframe tag -->
+  <iframe src="assets/car.webp" title="W3Schools Free Online Web Tutorials"></iframe>
+  <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+
+  <!-- img tag -->
+   <img src="assets/car.webp" alt="CAR" width="500" height="600">
+
+   <!-- map and area tag -->
+ <img src="assets/car.webp" alt="Workplace" usemap="#workmap" width="400" height="379">
+ <map name="workmap">
+  <area shape="rect" coords="34,44,270,350" href="index.htm" alt="computer">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="index.htm">
+     <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+ </map><br>
+
+ <!-- canvas tag -->
+ <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+
+ <!-- figcaption and figure tag -->
+ <figure>
+  <img src="assets/car.webp" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+<!-- picture and source tag -->
+<picture>
+  <source media="(min-width:650px)" srcset="assets/wall2.jpg">
+  <source media="(min-width:465px)" srcset="assets/car.webp"> 
+  <img src="assets/wall3.webp" alt="Flowers" style="width:auto;">
+</picture>
+
+<!-- svg tag -->
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+<!-- audio tag -->
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+<!-- video tag -->
+<video width="320" height="240" controls>
+  <source src="" type="video/mp4">
+  <source src="" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<!-- track tag -->
+<video width="320" height="240" controls>
+  <source src="forrest_gump.mp4" type="video/mp4">
+  <source src="forrest_gump.ogg" type="video/ogg">
+  <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+  <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+</video>
+
+<!-- marquee tag -->
+<marquee behavior="cloneNode"> Iam Minhaj</marquee>
+
+<!-- nav tag -->
+ <nav>
+  <a href="index.htm">html</a>/
+  <a href="style.css">css</a>/
+ </nav>
+
+<!-- menu tag -->
+<menu>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</menu>
+
+<!-- ul and li tag -->
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- ol tag -->
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<!-- dl,dt,dd tag -->
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+<!-- table,caption,tr,td,th,thead, tfoot,tbody,col,cogroup  tag -->
+<table>
+  <colgroup>
+    <col span="1" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- div tag -->
+<div class="myDiv">
+  <h2>This is a heading in a div element</h2>
+  <p>This is some text in a div element.</p>
+</div>
+
+<!-- span tag -->
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+<!-- header,article tag -->
+<article>
+  <header>
+    <h1>A heading here</h1>
+    <p>Posted by John Doe</p>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
+
+<!-- hgroup tag -->
+<hgroup>
+  <h2>Norway</h2>
+  <p>The land with the midnight sun.</p>
+</hgroup>
+
+<!-- footer tag -->
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+<!-- main tag -->
+<main>
+  <h1>Most Popular Browsers</h1>
+  <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+  <article>
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+
+  <!-- section tag -->
+  <h1>The section element</h1>
+<section>
+  <h2>WWF History</h2>
+  <p>The World Wide Fund for Nature (WWF) is an international organization  working on issues regarding
+     the conservation, research and restoration of the environment, formerly 
+    named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+<section>
+  <h2>WWF's Symbol</h2>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda
+     named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the
+      establishment of WWF.</p>
+</section>
+
+<!-- search tag -->
+<search>
+  <form>
+    <input name="fsrch" id="fsrch" placeholder="Search W3Schools">
+  </form>
+</search>
+
+<!-- aside tag -->
+<h1>The aside element</h1>
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! 
+  I had a great summer together with my family!</p>
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
+     pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<!-- detail,summary tag -->
+ <details>
+  <summary>Open</summary>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates officia sed ab rerum totam,
+     saepe magni quasi incidunt illo odio!</p>
+ </details>
+
+ <!-- dialog tag -->
+ <h1>The dialog element</h1>
+ <p>This is some text.</p>
+ <p>This is some text.</p>
+ <dialog open>This is an open dialog window</dialog>
+ <p>This is some text.</p>
+ <p>This is some text.</p>
+ 
+ <!-- data tag -->
+ <h1>The data element</h1>
+ <p>The following example displays product names but also associates each name with a product number:</p>
+ <ul>
+   <li><data value="21053">Cherry Tomato</data></li>
+   <li><data value="21054">Beef Tomato</data></li>
+   <li><data value="21055">Snack Tomato</data></li>
+ </ul>
+
+ <!-- base tag -->
+ <base href="https://www.w3schools.com/">
+
+ <!-- center tag -->
+  <center>Minhaj</center>
+
+  
+</body>
+</html>

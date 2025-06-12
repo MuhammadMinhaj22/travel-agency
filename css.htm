@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    /* * {
+      margin: 0;
+      padding: 0;
+    } */
+
+    .container {
+      background: rgb(216, 212, 212);
+      height: 423px;
+      width: 423px;
+      margin: 7px 3px 8px 9px;
+      padding: 14px;
+      border: 7px solid rgb(53, 46, 46);
+      /*border-style: dashed groove none dotted;
+  border-width: 3px;*/
+      border-radius: 9px;
+      /* color: white;
+  background-color: rgb(155, 230, 230);
+  background-size: 641px 641px ; 
+  background-image: url(assets/wall3.webp);
+  background-repeat: no-repeat;
+  /* border: 2px springgreen; */
+      /* background-position: top; */
+      /* background-attachment: fixed
+  */
+      box-sizing: border-box;
+      /* visibility: hidden; */
+    }
+
+    .h {
+      /* background-color: #cf1616;
+  border: 2px solid black;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 40px;
+  height: 20px;*/
+      box-sizing: border-box;
+      width: 100%;
+      border: solid #5B6DCD 10px;
+      padding: 5px;
+
+    }
+
+    .name {
+      text-align: center;
+      font-weight: bolder;
+      font-style: oblique;
+      font-variant: small-caps slashed-zero;
+    }
+
+    .b {
+      background-color: #1c38d8d7;
+      width: 22px;
+      height: 19px;
+      display: flex;
+
+    }
+
+    .l {
+      background-color: rgb(226, 27, 27);
+      width: 22px;
+      height: 19px;
+      display: flex;
+
+    }
+
+    .k {
+      background-color: #16bb9fd7;
+      width: 22px;
+      height: 19px;
+      display: flex;
+
+    }
+
+    .m {
+      background: rgb(231, 145, 145);
+      width: 934px;
+      height: 229px;
+      color: aqua;
+      opacity: 0.59;
+      /* text-decoration:  underline dotted red; */
+      text-transform: capitalize;
+      /* line-height: 50px; */
+      font-size: 23px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 50px;
+      letter-spacing: .2rem;
+
+
+    }
+
+    /* units*/
+    .x {
+      font-size: 12px;
+    }
+
+    .d {
+      font-size: 2em;
+    }
+
+    .r {
+      font-size: 3rem;
+      /* font-size: vh,vw,%; */
+      /* min-height: 75%;
+      min-width: 75em;
+      max-height: 75px;
+      max-width: 75px; */
+    }
+
+    li {
+      /* display: inline; */
+      /* list-style: square; */
+      /* list-style: square outside; */
+      list-style: square inside;
+      /* list-style-image: url(assets/car.webp); */
+    }
+
+    header {
+      background-color: black;
+      color: aliceblue;
+      height: 55px;
+      /* list-style: square; */
+
+    }
+
+    .uo {
+
+      border: 3px solid red;
+      text-align: center;
+      height: 100px;
+    }
+
+    .t {
+
+      background-color: aqua;
+      height: 30vh;
+      width: 50vw;
+      margin: auto;
+    }
+
+    .bo {
+      background-color: chartreuse;
+      width: 50px;
+      height: 44px;
+      /* position: absolute;
+      position: relative; */
+      position: fixed;
+      /* position: static; */
+      /* position: sticky; */
+      top: 90px;
+      left: 70px;
+      right: 40px;
+      bottom: 50px;
+      /* z-index: 1; */
+    }
+
+    .bo2 {
+      background-color: rgb(68, 0, 255);
+      width: 50px;
+      height: 50px;
+
+    }
+
+    .j {
+      height: 50px;
+      width: 50px;
+      background-color: red;
+      float: right;
+
+    }
+
+    .j2 {
+      height: 50px;
+      width: 50px;
+      background-color: blue;
+      clear: right;
+
+    }
+
+    .t2 {
+      background-color: greenyellow;
+      box-shadow: 6px 6px 7px 9px goldenrod;
+      width: 90px;
+      height: 70px;
+    }
+
+    .contain {
+      display: flex;
+      justify-content: space-evenly;
+      /* Elements center,space between,space around,space evenly ho jayenge */
+      align-items: center;
+      /* without height width hum set kr skty hai */
+      height: 100vh;
+      /* Full screen height */
+      background-color: #f0f0f0;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .con {
+      /* display: flex;
+    flex-wrap: wrap; /* Items wrap ho jayenge */
+      /* gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;  */
+      display: grid;
+      /* grid-template-columns: 200px 200px 200px; */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      /* grid-template-columns: 200px 2fr 1fr; */
+      grid-template-rows: 100px 100px 100px;
+      /* grid-template-rows: auto 100px 1fr; */
+      /* grid-template-rows: 1fr 1fr 1fr ;*/
+      gap: 10px;
+
+      /* Row & Column spacing */
+
+    }
+
+    .ox {
+      /* width: 150px;
+    height: 100px; */
+      background-color: blue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .xo {
+      height: 100px;
+      width: 100px;
+      background-color: blanchedalmond;
+      border: 5px solid black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(0.900turn);
+      /*turn/deg  xyz*/
+      transform-origin: 50% 0%;
+      /* transform: scale(0.6); X,Y,Z*/
+      /* transform: skew(5deg);x,y */
+      /* transform: translate(100px);X,Y */
+      /* transform: translate(50PX) skewX(49deg) scale(0.5); */
+
+    }
+
+    .co {
+      height: 40vh;
+      width: 50vw;
+      border: 4px solid purple;
+    }
+
+    .coo {
+      background-color: antiquewhite;
+      height: 40vh;
+      width: 40vw;
+
+    }
+
+    .xoo {
+      background-color: aquamarine;
+      width: 5vw;
+      height: 4vh;
+      transition-property: all;
+      transition-duration: 2s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 1ms;
+      
+
+    }
+
+    .bg {
+      transform: translateX(10%) translateY(10%);
+
+    }
+    .vo {
+            background-color: rgb(18, 195, 195);
+            width: 50vw;
+            height: 50vh;
+        }
+
+        .mo {
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation-name: min;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation:  min 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate-reverse ,
+            min2 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite alternate-reverse;
+        }
+
+        @keyframes min {
+            from {
+                background-color: red;
+
+            }
+
+            to {
+                transform: translate(400px);
+                background-color: blue;
+            }
+        }
+
+        @keyframes min2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+           20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="container">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur in ducimus natus unde at iure, possimus
+      recusandae. Nesciunt maxime ea ad at nisi ratione. Veritatis ullam sapiente consectetur qui pariatur dolorem vel
+      distinctio inventore!</p>
+    <div class="h">
+
+    </div>
+  </div>
+  <p class="name">Lorem ipsum dolor </p>
+  <div class="b">1</div>
+  <div class="l">2</div>
+  <div class="k">3</div>
+  <p class="m">Lorem ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus magni voluptates
+    iusto enim. Neque repudiandae officia itaque reprehenderit ullam dolorem accusamus libero natus.</p>
+
+  <!-- units -->
+  <div class="x">Lorem ipsum dolor sit.
+    <div class="d">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur amet earum quidem!</div>
+  </div>
+  <div class="r">Lorem ipsum dolor sit amet.</div>
+
+  <!-- position -->
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+  <div class="t">
+    <p class="uo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aperiam? Temporibus, magnam illo adipisci
+      dolores excepturi accusantium, doloremque perferendis quidem numquam repellendus ratione.</p>
+    <div class="bo">Lorem, ipsum </div>
+    <div class="bo2">Lorem, ipsum </div>
+  </div>
+  <div class="j"> j
+
+  </div>
+  <div class="j2"> j2
+
+  </div>
+  <div class="t2">Minhaj</div>
+  <div class="contain">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+  <div class="con">
+    <div class="ox">Box 1</div>
+    <div class="ox">Box 2</div>
+    <div class="ox">Box 3</div>
+    <div class="ox">Box 4</div>
+    <div class="ox">Box 5</div>
+    <div class="ox">Box 6</div>
+    <div class="ox">Box 7</div>
+    <div class="ox">Box 8</div>
+    <div class="ox">Box 9</div>
+  </div>
+
+  <div class="co">
+    <div class="xo">box</div>
+  </div>
+  <div class="coo">
+    <div class="xoo bg">box</div>
+  </div>
+
+  <!-- animations -->
+  <div class="vo">
+    <div class="mo"></div>
+</div>
+</body>
+
+</html>
