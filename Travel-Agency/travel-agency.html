@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="travel-agency.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Explore-World Travels</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle-switch">
+            <input type="checkbox" id="darkModeToggle">
+            <label for="darkModeToggle" class="switch">
+                <span class="icon-container">
+                    <span class="icon sun">☀️</span>
+                    <span class="icon moon">🌙</span>
+                </span>
+            </label>
+        </div>
+
+
+    </header>
+
+
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Book your dream destination today!</p>
+            <a href="travel-form.html" class="btn">Book Now</a>
+        </div>
+    </section>
+
+
+    <section id="destinations" class="destinations">
+        <div class="head">
+            <h2>Popular Destinations</h2>
+        </div>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="paris.jpg" alt="Destination 1">
+                <h3>Paris, France</h3>
+                <p>The city of lights awaits you!</p>
+            </div>
+            <div class="card">
+                <img src="bali.webp" alt="Destination 2">
+                <h3>Bali, Indonesia</h3>
+                <p>Experience tropical paradise!</p>
+            </div>
+            <div class="card">
+                <img src="tokyo.avif" alt="Destination 3">
+                <h3>Tokyo, Japan</h3>
+                <p>A perfect blend of tradition and modernity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="head">
+            <h2>About Us</h2>
+        </div>
+        <div class="about2">
+            <div class="aboutp">
+                <h3>Explore the World with Us!</h3>
+                <p>Travel isn’t just about moving from one place to another—it’s about discovering new cultures, meeting
+                    incredible people, and creating unforgettable memories. [Your Website Name] is your ultimate travel
+                    companion, helping you explore the most breathtaking and hidden destinations across the globe.</p>
+            </div>
+            <div class="aboutp">
+                <h3>Our Mission</h3>
+                <p>We don’t just list places to visit—we take you on a journey. Our goal is to inspire and guide
+                    travelers,
+                    whether you're a backpacker on a budget or a luxury explorer seeking the finest experiences.</p>
+            </div>
+            <div class="aboutp">
+                <h3>Join Us on This Journey!</h3>
+                <p>You’re not just a visitor—you’re part of a global travel community. Follow us, share your
+                    experiences, and
+                    let’s explore the world together!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="head">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact2">
+            <p>Email: info@exploreworld.com</p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <form action="#" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="message">Message</label>
+            <textarea type="message" name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <input class="sign" type="submit" value="Send Message"><br><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Explore-World Travels. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.getElementById("darkModeToggle");
+        const icon = document.getElementById("toggleIcon");
+
+        toggle.addEventListener("change", () => {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+
+</body>
+
+</html>
